@@ -1,5 +1,6 @@
 # Google AI Mode Scraper
 
+[![Oxylabs promo code](https://raw.githubusercontent.com/oxylabs/chatgpt-scraper/refs/heads/main/ScraperAPI%2BChatGPT-1090x275px.png)](https://oxylabs.io/products/scraper-api/serp/chatgpt?utm_source=877&utm_medium=affiliate&groupid=877&utm_content=chatgpt-scraper-github&transaction_id=102f49063ab94276ae8f116d224b67)
 
 
 [Google AI Mode scraper](https://oxylabs.io/products/scraper-api/serp/google-ai-mode) lets you send prompts and reliably extract AI responses at scale without blocks. Built on the [Web Scraper API](https://oxylabs.io/products/scraper-api/web), it delivers parsed data in JSON format while handling proxies, headless browsers, and anti-bot systems for you. You can use scraped Google AI Mode data to power SEO and GEO projects, build training datasets, or support other data tasks.
