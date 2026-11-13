@@ -1,7 +1,11 @@
 {
+  "status": 200,
   "results": [
     {
-      "content": {
+      "html": null,
+      "markdown": null,
+      "screenshot": null,
+      "json": {
         "links": [
           {
             "url": "https://www.tomsguide.com/best-picks/best-cheap-fitness-trackers",
@@ -154,15 +158,28 @@
         "response_text": "For the best health trackers under $200, the top contenders are the Fitbit Charge 6 , Fitbit Inspire 3 , and the Garmin Forerunner 55 , as of late 2024 and mid-2025 . Each offers a strong feature set, but with different specializations. The best choice depends on whether you prioritize robust activity tracking, simplicity and battery life, or dedicated running features. Fitbit Charge 6 Fitness Tracker $159.95 4.2 (4K+) Fitbit Inspire 3 $83.87 4.4 (5K+) Garmin Forerunner 55 $199.99 4.7 (8K+) Best overall: Fitbit Charge 6 This tracker offers the most advanced health features and the best combination of fitness and smartwatch functions under $200. Price: ~$160. Best for: All-purpose use and runners who want connected Google services. Pros: Built-in GPS: Accurately tracks runs and other outdoor exercises without needing to carry your phone. Advanced sensors: Includes an ECG app for heart health monitoring and an SpO2 sensor for blood oxygen tracking. Google integrations: Access Google Maps and Google Wallet directly from your wrist. Bright display: Features a vibrant AMOLED touchscreen. Cons: Battery life: The 7-day battery life is shorter than less-featured trackers, especially when using GPS. Limited music: Only supports YouTube Music for on-wrist control. Best for beginners: Fitbit Inspire 3 If you want an affordable, easy-to-use tracker that covers all the health basics, the Inspire 3 is a great choice . Price: ~$100. Best for: Casual fitness tracking, beginners, and sleep tracking. Pros: Excellent battery life: Up to 10 days on a single charge. Lightweight and comfortable: Slim and unobtrusive, making it ideal for 24/7 wear and sleep tracking. Comprehensive metrics: Tracks steps, heart rate, sleep stages, and stress, with guided breathing exercises. Colorful AMOLED display: A major upgrade from its predecessor. Cons: No built-in GPS: Must use your phone's GPS for tracking outdoor routes. Paywall for advanced insights: Detailed sleep scores and stress information require a Fitbit Premium subscription. Best for runners on a budget: Garmin Forerunner 55 For runners who want accurate GPS and performance metrics without a high price tag, the Forerunner 55 delivers . Price: ~$170\u2013$200. Best for: Dedicated running, cycling, and other sports. Pros: Accurate built-in GPS: Allows you to run or cycle phone-free. Free, in-depth data: Access Garmin's extensive training analysis and coaching features through the Garmin Connect app with no extra subscription. Long battery life: Up to two weeks in smartwatch mode and 20 hours in GPS mode. Physical buttons: Easy to use during sweaty workouts. Cons: Lower-res display: The screen is not as vibrant as competitors with AMOLED displays. Limited smartwatch features: It is a more focused sports watch than an all-purpose smartwatch. Best for a large display and advanced features: Amazfit Active For those who prefer a more traditional smartwatch-style display and built-in GPS under $100, the Amazfit Active is an excellent value . Price: ~$89. Best for: Users who want a large display and smartwatch functions on a budget. Pros: Built-in GPS: A standout feature for the low price point. Large AMOLED display: The 1.75-inch screen is bright and easy to read. Excellent battery life: Can last up to 27 days in certain modes. Smartwatch capabilities: Includes phone notifications, music control, and an AI assistant. Cons: Bulkier than band trackers: The larger screen may not be ideal for sleeping. Less robust software: The companion app is not as comprehensive as Garmin Connect or Fitbit. Fitbit Inspire 3 Health Fitness Tracker $92.60 4.4 (5K+) Amazfit Active Edge Smartwatch $79.00 $203.00 4.7 (653) Comparison of features Feature Fitbit Charge 6 Fitbit Inspire 3 Garmin Forerunner 55 Amazfit Active Price ~$160 ~$100 ~$170\u2013$200 ~$89 Built-in GPS Yes No (Connected GPS) Yes Yes Display AMOLED (Color) AMOLED (Color) LCD (Color) AMOLED (Color) Battery Life Up to 7 days Up to 10 days Up to 2 weeks Up to 27 days Advanced Health ECG, SpO2, HRV SpO2, HRV, Stress HRV, Recovery Time SpO2, HRV, Stress Smartwatch Features Google Maps, Wallet, Music Control Notifications Music Control, Notifications Notifications, AI Assistant, Maps Subscription Required No (for basic data) No (for basic data) No No (for most features) Best For All-purpose use; runners with Google phones Casual fitness; beginners; sleep tracking Dedicated runners Smartwatch features; large screen on a budget",
         "parse_status_code": 12000
       },
-      "created_at": "2025-09-03 10:13:11",
-      "updated_at": "2025-09-03 10:13:26",
-      "page": 1,
-      "url": "https://www.google.com/search?udm=50&q=best+health+trackers+under+$200&uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&sei=vRS4aPrAL9K55OUPhfvBsAM",
-      "job_id": "7368949174630367233",
-      "is_render_forced": false,
-      "status_code": 200,
-      "parser_type": "",
-      "parser_preset": null
+      "metadata": {
+        "page": 1,
+        "run_js": true,
+        "url": "https://www.google.com/search?udm=50&q=best+health+trackers+under+$200&uule=w+CAIQICINdW5pdGVkIHN0YXRlcw&gl=us&hl=en&sei=vRS4aPrAL9K55OUPhfvBsAM"
+      }
     }
-  ]
+  ],
+  "params": {
+    "query": "best health trackers under $200",
+    "output": [
+      "json"
+    ],
+    "json": {
+      "schema": null,
+      "prompt": null
+    },
+    "location": "US",
+    "device": "desktop",
+    "run_js": true
+  },
+  "metadata": {
+    "timestamp": 1756894406,
+    "request_id": "7368949174630367233"
+  }
 }
