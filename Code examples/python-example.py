@@ -4,19 +4,19 @@ import requests
 
 # API parameters.
 payload = {
-    'source': 'google_ai_mode',
     'query': 'best health trackers under $200',
-    'render': 'html',
-    'parse': True,
-    'geo_location': 'United States'
+    'run_js': True,
+    'output': ['json'],
+    'location': 'US',
 }
 
 # Get a response.
 response = requests.post(
-    'https://realtime.oxylabs.io/v1/queries',
-    # Replace with your credentials.
-    auth=('USERNAME', 'PASSWORD'),
+    'https://webapi.oxylabs.io/v1/scrape/google/aimode',
+    # Replace with your API key.
+    headers={'Authorization': 'Bearer YOUR_API_KEY'},
     json=payload,
+    timeout=150,  # Headless rendering can take a while.
 )
 
 # Print the response to stdout.
