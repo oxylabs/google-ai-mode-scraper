@@ -1,42 +1,41 @@
 using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
-using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace OxyApi
+class Program
 {
-    class Program
+    static async Task Main()
     {
-        static async Task Main()
+        // Replace with your API key.
+        const string ApiKey = "YOUR_API_KEY";
+
+        // API parameters.
+        var payload = new
         {
-            const string Username = "USERNAME";
-            const string Password = "PASSWORD";
+            query = "best health trackers under $200",
+            run_js = true,
+            output = new[] { "json" },
+            location = "US"
+        };
 
-            var parameters = new
-            {
-                source = "google_ai_mode",
-                query = "best health trackers under $200",
-                render = "html",
-                parse = true
-            };
+        // Headless rendering can take a while.
+        var client = new HttpClient { Timeout = TimeSpan.FromSeconds(150) };
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://webapi.oxylabs.io/v1/scrape/google/aimode");
+        request.Headers.Add("Authorization", "Bearer " + ApiKey);
+        request.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
-            var client = new HttpClient();
+        // Get a response.
+        var response = await client.SendAsync(request);
+        var content = await response.Content.ReadAsStringAsync();
 
-            Uri baseUri = new Uri("https://realtime.oxylabs.io");
-            client.BaseAddress = baseUri;
+        // Print the response to stdout.
+        Console.WriteLine(content);
 
-            var requestMessage = new HttpRequestMessage(HttpMethod.Post, "/v1/queries");
-            requestMessage.Content = JsonContent.Create(parameters);
-
-            var authenticationString = $"{Username}:{Password}";
-            var base64EncodedAuthenticationString = Convert.ToBase64String(System.Text.ASCIIEncoding.UTF8.GetBytes(authenticationString));
-            requestMessage.Headers.Add("Authorization", "Basic " + base64EncodedAuthenticationString);
-
-            var response = await client.SendAsync(requestMessage);
-            var contents = await response.Content.ReadAsStringAsync();
-
-            Console.WriteLine(contents);
-        }
+        // Save the response to a JSON file.
+        using var document = JsonDocument.Parse(content);
+        File.WriteAllText("response.json", JsonSerializer.Serialize(document.RootElement, new JsonSerializerOptions { WriteIndented = true }));
     }
 }
