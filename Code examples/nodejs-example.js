@@ -1,41 +1,33 @@
-const https = require("https");
+// Requires Node.js 18 or later.
+const fs = require('fs');
 
-const username = "USERNAME";
-const password = "PASSWORD";
-const body = {
-    source: "google_ai_mode",
-    query: "best health trackers under $200",
-    render: "html",
-    parse: true
+// API parameters.
+const payload = {
+  query: 'best health trackers under $200',
+  run_js: true,
+  output: ['json'],
+  location: 'US',
 };
 
-const options = {
-    hostname: "realtime.oxylabs.io",
-    path: "/v1/queries",
-    method: "POST",
+async function main() {
+  // Get a response.
+  const response = await fetch('https://webapi.oxylabs.io/v1/scrape/google/aimode', {
+    method: 'POST',
     headers: {
-        "Content-Type": "application/json",
-        Authorization:
-            "Basic " + Buffer.from(`${username}:${password}`).toString("base64"),
+      'Content-Type': 'application/json',
+      // Replace with your API key.
+      Authorization: 'Bearer YOUR_API_KEY',
     },
-};
+    body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(150000), // Headless rendering can take a while.
+  });
+  const data = await response.json();
 
-const request = https.request(options, (response) => {
-    let data = "";
+  // Print the response to stdout.
+  console.dir(data, { depth: null });
 
-    response.on("data", (chunk) => {
-        data += chunk;
-    });
+  // Save the response to a JSON file.
+  fs.writeFileSync('response.json', JSON.stringify(data, null, 2));
+}
 
-    response.on("end", () => {
-        const responseData = JSON.parse(data);
-        console.log(JSON.stringify(responseData, null, 2));
-    });
-});
-
-request.on("error", (error) => {
-    console.error("Error:", error);
-});
-
-request.write(JSON.stringify(body));
-request.end();
+main();
