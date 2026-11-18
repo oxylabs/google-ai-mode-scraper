@@ -1,4 +1,4 @@
-[![Google AI Mode](https://github.com/oxylabs/google-ai-mode-scraper/blob/main/google-ai-mode-github-banner.png)](https://oxylabs.io/products/scraper-api/serp/google-ai-mode?utm_source=877&utm_medium=affiliate&utm_campaign=llm_scrapers&groupid=877&utm_content=google-ai-mode-scraper-github&transaction_id=102f49063ab94276ae8f116d224b67)
+[![Google AI Mode](https://github.com/oxylabs/google-ai-mode-scraper/blob/main/3-Google-AI-mode-scraper.png)](https://oxylabs.io/products/scraper-api/serp/google-ai-mode?utm_source=877&utm_medium=affiliate&utm_campaign=llm_scrapers&groupid=877&utm_content=google-ai-mode-scraper-github&transaction_id=102f49063ab94276ae8f116d224b67)
 
 <a href="https://oxylabs.io"><img src="https://img.shields.io/badge/🚀_Get_Started-FF6B35?style=for-the-badge" alt="Get started"></a>
 <a href="https://developers.oxylabs.io"><img src="https://img.shields.io/badge/📚_Documentation-4A90E2?style=for-the-badge" alt="Documentation"></a>
